@@ -18,14 +18,14 @@ function Navbar() {
         {/* user is signed-in and has username */}
         {username && (
           <>
-            <li>
+            <li className="push-left">
               <Link href="/admin">
                 <button className="btn-blue">Write Posts</button>
               </Link>
             </li>
             <li>
               <Link href={`/${username}`}>
-                <img src={user?.photoUrl} />
+                <img src={user?.photoURL} />
               </Link>
             </li>
           </>
@@ -35,7 +35,7 @@ function Navbar() {
         {!username && (
           <li>
             <Link href="/enter">
-              <button className="btn-blue">Log in</button>
+              <button className="btn-blue">Sign in</button>
             </Link>
           </li>
         )}
