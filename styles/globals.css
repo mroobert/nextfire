@@ -155,6 +155,7 @@ button.btn-green {
 
 button.btn-google {
   background-color: white;
+  max-width: 20rem;
   color: var(--color-text);
 }
 
@@ -266,6 +267,12 @@ input[type="file"] {
   flex-direction: column;
   align-content: center;
   text-align: center;
+}
+
+.center-buttons {
+  display: flex; /* enable flexbox layout */
+  justify-content: center; /* center items horizontally */
+  align-items: center; /* center items vertically */
 }
 
 .hidden {
